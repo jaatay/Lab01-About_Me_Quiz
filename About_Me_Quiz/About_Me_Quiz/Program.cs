@@ -120,7 +120,7 @@ namespace About_Me_Quiz
 
             if (UserInput.ToLower() == "y" || UserInput.ToLower() == "yes")
             {
-                Console.WriteLine("Yes, I have been to Syria on accident.");
+                Console.WriteLine("Yes, I have been to Syria on accident. Long story.");
                 ScoreCounter++;
             }
             else
