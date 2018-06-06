@@ -34,9 +34,9 @@ namespace About_Me_Quiz
             while (Ready == false)
             {
                 Console.WriteLine("Are you ready? Type y/yes when ready.");
-                string UserInput = Console.ReadLine();
+                string UserInput = (Console.ReadLine());
 
-                if (UserInput == "yes" || UserInput == "y")
+                if (UserInput.ToLower() == "yes" || UserInput.ToLower() == "y")
                 {
                     Console.WriteLine("Congratulations! One down, four to go!");
                     Ready = true;
@@ -55,11 +55,11 @@ namespace About_Me_Quiz
             Console.WriteLine("Semper Fi? Type y/yes or n/no.");
             string UserInput = Console.ReadLine();
 
-            if (UserInput == "yes" || UserInput == "y")
+            if (UserInput.ToLower() == "yes" || UserInput.ToLower() == "y")
             {
                 Console.WriteLine("Oorah!");
                 ScoreCounter++;
-            } else if (UserInput == "no" || UserInput == "n")
+            } else if (UserInput.ToLower() == "no" || UserInput.ToLower() == "n")
             {
                 Console.WriteLine("Meh.");
             }
@@ -101,7 +101,7 @@ namespace About_Me_Quiz
         //method to check user's answer to question 4, accepting the previous string as an argument
         static void Question4Check(string UserAnswer)
         {
-            if (UserAnswer == "liquid" || UserAnswer == "Liquid")
+            if (UserAnswer.ToLower() == "liquid" || UserAnswer.ToLower() == "Liquid")
             {
                 Console.WriteLine("Wow. Just...wow. Here's a point!");
                 ScoreCounter++;
@@ -118,7 +118,7 @@ namespace About_Me_Quiz
             Console.WriteLine("Have I been to Syria?(type y/yes or n/no to answer.)");
             string UserInput = Console.ReadLine();
 
-            if (UserInput == "y" || UserInput == "yes")
+            if (UserInput.ToLower() == "y" || UserInput.ToLower() == "yes")
             {
                 Console.WriteLine("Yes, I have been to Syria on accident.");
                 ScoreCounter++;
